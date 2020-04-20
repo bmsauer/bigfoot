@@ -1,0 +1,142 @@
+Bigfoot, Forest Protector
+
+Controls
+A/D - Move Left/Right
+W - Whoop (tree knock/whoop)
+S - Pick up rock/stick/branches/food
+1,2,3 - Build tree structure
+E - Throw Rock
+Space - Special: scream, teleport, plant
+
+The Playing Area:
+Sticks - Currency, main goal, used to build structures
+Food - Powers up special meter
+Rocks - Currency, weapon
+Trees - Provide sticks in intervals.  Whoops near trees are more powerful wood knocks
+Stump - Goal is to give x number of sticks
+
+Enemies:
+All enemies have "resolve" level, which when reduced to 0, makes them run.
+Each enemy has different resolve weaknesses.
+Bigfoot cannot go close to enemies; the closest enemy is how far bigfoot can go
+
+Hiker - base enemy
+Lumberjack - Stronger hiker, can fell tree structures or entire trees
+Camper - weak fast unit, sets up camp, a static but strong enemy
+Researcher - weak unit, but gains life from whoops and tressssocks
+
+
+Specials:
+Scream - eliminate first 3 enemies
+Teleport - transport across entire playing area
+Plant - grow a tree
+
+Game:
+Static per level:
+ Tree goal
+ Number of enemies
+ Types of enemies
+ Number of trees/rocks/food
+Randomly generate a level:
+ Location of trees/rocks/food
+ Enemy Spawn Order/Interval
+
+End Conditions:
+Success: defeat all enemies
+Failure: enemies get to stump
+
+Graphics:
+
+Bigfoot:
+BBBBB
+BBBBB
+BBBBB
+BBBBB
+BBBBB
+BBBBB
+BBBBB
+
+Hiker:
+HHHHH
+HHHHH
+HHHHH
+HHHHH
+HHHHH
+
+Tent:
+   /\
+  /xx\
+ /xxxx\
+/xxxxxx\
+
+Tree:
+    t
+    tt
+    tt
+   tttt
+   tttt
+  tttttt
+ tttttttt
+ tttttttt
+tttttttttt
+tttttttttt
+    TT
+    TT
+    TT
+    TT
+    TT
+
+Stump:
+ SSSSSS
+ SSSSSS
+ SSSSSSS
+ SSSSSSS
+SSSSSSSSSS
+
+
+Sticks:
+----f--
+
+Rocks:
+ OO
+OOO
+
+Food:
+  ,
+ F
+FFF
+FFF
+
+Tree break:
+  /
+ /
+|
+|
+|
+
+Tree Post:
+\|/
+ T
+ |
+ |
+ |
+
+Tree Structure:
+
+\ | /
+ \|/ 
+  X
+ /|\
+/ | \
+
+
+
+Still to do:
+"waves" gameplay, shop in between waves with upgrades
+rocks don't do anything
+enemies aren't any different than each other
+no start/done screens
+customizable game variables
+mini map
+sound/music
+balancing/playtesting
